@@ -1,0 +1,41 @@
+site_name: Prompt Injection Playbook
+site_description: A practical guide to prompt injection risks in AI agent systems
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: amber
+  features:
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+
+nav:
+  - Home: README.md
+  - Chapters:
+    - 1. Attack Surface Map: chapters/01-attack-surface-map.md
+    - 2. Anatomy of an Attack: chapters/02-anatomy-of-an-attack.md
+    - 3. Multi-Agent Risks: chapters/03-multi-agent-risks.md
+    - 4. Community Skills & Plugins: chapters/04-community-skills-and-plugins.md
+    - 5. Defense Patterns: chapters/05-defense-patterns.md
+    - 6. Audit Playbook: chapters/06-audit-playbook.md
+  - Checklists:
+    - Pre-Launch Checklist: checklists/pre-launch-checklist.md
+    - Skill Audit Checklist: checklists/skill-audit-checklist.md
+    - Incident Response: checklists/incident-response-template.md
+  - Examples:
+    - Injection Patterns: examples/injection-patterns.md
+    - Architecture Comparison: examples/architecture-comparison.md
+
+markdown_extensions:
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
