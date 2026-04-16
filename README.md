@@ -67,7 +67,7 @@ Please keep contributions practical and actionable. We're optimizing for "what s
 
 ## License
 
-[MIT](LICENSE) — use it, share it, adapt it.
+[CC BY-SA 4.0](LICENSE) — use it, share it, adapt it — with attribution and under the same license.
 
 ---
 
